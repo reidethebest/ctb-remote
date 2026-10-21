@@ -1,5 +1,5 @@
 // Service worker: la app abre al instante y sin internet (la conexión con el juego es aparte, por WebSocket).
-const CACHE = 'ctb-remote-f246451d2b';
+const CACHE = 'ctb-remote-cdbe5553f6';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

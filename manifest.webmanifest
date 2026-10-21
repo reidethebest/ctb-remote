@@ -1,7 +1,7 @@
 {
-  "name": "CTB Remote",
-  "short_name": "CTB Remote",
-  "description": "Control remoto de CactusTowerBot: ajustes, binds y estado en vivo.",
+  "name": "Reiden",
+  "short_name": "Reiden",
+  "description": "Control remoto de tus mods (Cactus Bot y Mint) desde el celular o la PC.",
   "lang": "es",
   "start_url": "./#/rapido",
   "scope": "./",
